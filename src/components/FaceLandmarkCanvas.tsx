@@ -6,19 +6,28 @@ import AvatarCanvas from "./AvatarCanvas";
 import FaceLandmarkManager from "@/class/FaceLandmarkManager";
 import ReadyPlayerCreator from "./ReadyPlayerCreator";
 
+// 修改canvas的宽高为全屏
+
 const FaceLandmarkCanvas = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const lastVideoTimeRef = useRef(-1);
   const requestRef = useRef(0);
-  const [avatarView, setAvatarView] = useState(true);
+  const [avatarView, setAvatarView] = useState(false);
   const [showAvatarCreator, setShowAvatarCreator] = useState(false);
   const [modelUrl, setModelUrl] = useState(
     "https://models.readyplayer.me/6460691aa35b2e5b7106734d.glb?morphTargets=ARKit"
   );
-  const [videoSize, setVideoSize] = useState<{
+  let [videoSize, setVideoSize] = useState<{
     width: number;
     height: number;
   }>();
+
+  // videoSize = {
+  //   width: window.innerWidth,
+  //   height: window.innerHeight,
+  // };
+
+  
 
   const toggleAvatarView = () => setAvatarView((prev) => !prev);
   const toggleAvatarCreatorView = () => setShowAvatarCreator((prev) => !prev);
@@ -73,9 +82,8 @@ const FaceLandmarkCanvas = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex justify-center gap-10 mt-5 mb-10">
-        <button
+    <div className="">
+        {/* <button
           className="self-end bg-purple-700 hover:bg-purple-600 transition text-white px-2 py-1 rounded mb-2 shadow-md text-sm sm:text-base"
           onClick={toggleAvatarView}
         >
@@ -86,8 +94,7 @@ const FaceLandmarkCanvas = () => {
           onClick={toggleAvatarCreatorView}
         >
           {"Customize your Avatar!"}
-        </button>
-      </div>
+        </button> */}
       <div className="flex justify-center">
         <video
           className="w-full h-auto"

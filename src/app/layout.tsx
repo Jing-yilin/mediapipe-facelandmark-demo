@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <p className="fixed bottom-5 left-1/2 transform -translate-x-1/2 text-white text-shadow text-center md:text-lg text-sm">
+        {/* <p className="fixed bottom-5 left-1/2 transform -translate-x-1/2 text-white text-shadow text-center md:text-lg text-sm">
           Check out the
           <a
             href="https://developers.google.com/mediapipe/solutions/vision/face_landmarker"
@@ -29,7 +29,7 @@ export default function RootLayout({
             MediaPipe Face Landmark documentation
           </a>{" "}
           for more details.
-        </p>
+        </p> */}
         <Link
           href="https://github.com/jays0606/mediapipe-facelandmark-demo"
           className="group fixed bottom-5 right-5"
