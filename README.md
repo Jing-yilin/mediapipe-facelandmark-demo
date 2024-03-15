@@ -14,7 +14,7 @@ This project requires [Node.js](https://nodejs.org/en/download/) to be installed
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/jays0606/mediapipe-facelandmarker-demo.git
+   git clone https://github.com/Jing-yilin/mediapipe-facelandmark-demo
    ```
 2. Navigate into the project directory:
    ```sh
