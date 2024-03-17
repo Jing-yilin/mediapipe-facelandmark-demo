@@ -83,18 +83,6 @@ const FaceLandmarkCanvas = () => {
 
   return (
     <div className="">
-        {/* <button
-          className="self-end bg-purple-700 hover:bg-purple-600 transition text-white px-2 py-1 rounded mb-2 shadow-md text-sm sm:text-base"
-          onClick={toggleAvatarView}
-        >
-          {avatarView ? "Switch to Landmark View" : "Switch to Avatar View"}
-        </button>
-        <button
-          className="self-end bg-purple-700 hover:bg-purple-600 transition text-white px-2 py-1 rounded mb-2 shadow-md text-sm sm:text-base"
-          onClick={toggleAvatarCreatorView}
-        >
-          {"Customize your Avatar!"}
-        </button> */}
       <div className="flex justify-center">
         <video
           className="w-full h-auto"

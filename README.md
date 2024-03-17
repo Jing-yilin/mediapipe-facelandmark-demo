@@ -10,6 +10,10 @@ This project aims to test and demonstrate the capabilities of MediaPipe's new fa
 
 This project requires [Node.js](https://nodejs.org/en/download/) to be installed on your local machine.
 
+## Mediapipe Face Landmark
+
+![Mediapipe Face Landmark](https://storage.googleapis.com/mediapipe-assets/documentation/mediapipe_face_landmark_fullsize.png)
+
 ## Installation
 
 1. Clone the repository:
